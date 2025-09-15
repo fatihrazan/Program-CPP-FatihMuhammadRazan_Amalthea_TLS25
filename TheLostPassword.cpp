@@ -11,7 +11,6 @@ string generatePassword(string word){
             word.erase(i,1);
             i--;
         }
-        cout << word << endl;
     }
     int center = word.length()/2 -1;
     string password;
@@ -40,7 +39,6 @@ string solvePassword(string pass){
         kata += pass[i];
     }
     if (char(huruf) == kata[0]){
-        cout << huruf;
         return kata;
     }else{
         return char(huruf) + kata;
